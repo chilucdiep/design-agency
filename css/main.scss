@@ -444,6 +444,12 @@ header {
             background-size: contain;
             padding: 5em;
             margin-bottom: 2em;
+            transition: all 300ms ease-in;
+        }
+
+        .pricing-card:hover {
+            transform: scale(1.1);
+            cursor: pointer;
         }
 
         .pricing-text {
