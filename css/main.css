@@ -86,7 +86,6 @@ body {
   background-color: #202047;
   color: white;
   font-family: 'Poppins', sans-serif;
-  max-width: 1680px;
 }
 
 body.noscroll {
