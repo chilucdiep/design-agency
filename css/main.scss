@@ -35,19 +35,19 @@ img {width: 100%;}
 
 h1 {
     font-weight: 700;
-    font-size: 2.6em;
+    font-size: 2.8em;
     background: -webkit-linear-gradient(#6B0151, #321CBB);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 h3 {
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 
 p {
     opacity: 0.8;
-    font-size: 0.7em;
+    font-size: .8em;
     line-height: 2.2em;
 }
 
@@ -431,6 +431,8 @@ header {
 }
 
 .pricing-wrapper {
+    margin-bottom: 3em;
+
     .section-title::before {
         background: linear-gradient(31.02deg, rgba(61, 9, 151, 0.7) 13.67%, rgba(59, 8, 152, 0.7) 13.68%, rgba(61, 9, 151, 0.7) 13.69%, rgba(175, 67, 92, 0.7) 101.93%);    
     }
@@ -500,11 +502,51 @@ header {
     }
 }
 
+footer {
+    background-color: #313157;
+    padding: 2em;
 
+    h3 {
+        font-size: 2.5em;
+        opacity: .9;
+        margin: 0;
+    }
+    h4 {
+        opacity: .9;
+        margin: 0;
+    }
 
+    .footer-info {
+        margin-top: 2em;
+        display: grid;
+        grid-gap: 1em;
 
+        .links {
+            display: flex;
+            justify-content: space-between;
 
+            h4 {
+                margin: .7em 0;
+            }
 
+            p {
+                margin: 0;
+            }
+        }
+
+        .locations {
+            text-align: center;
+
+            p {
+                margin: 1.2em 0;
+            }
+
+            .location {
+                margin-bottom: 2em;
+            }
+        }
+    }
+}
 
 // Media Queries
 
@@ -617,6 +659,30 @@ header {
                 .pricing-text {
                     right: -5%;
                 }                
+            }
+        }
+    }
+
+    footer {
+        .footer-info {
+            display: grid;
+            grid-template-columns: 20% 1fr;
+
+            .links {
+                flex-direction: column;
+                justify-content: flex-start;
+
+                .follow {
+                    margin-top: 1em;
+                }
+            }
+
+            .locations {
+                display: flex;
+                justify-content: space-between;
+
+                .location {
+                }
             }
         }
     }
@@ -752,6 +818,15 @@ header {
             }
         }
     }
+
+    footer {
+        .footer-info {
+            .locations {
+                margin-left: 2em;
+                max-width: 700px;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -800,6 +875,16 @@ header {
                 .pricing-text {
                     margin-top: 5em;
                 }
+            }
+        }
+    }
+
+    footer {
+        padding: 0;
+
+        .footer-info {
+            .locations {
+                margin-left: 8em;
             }
         }
     }
